@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from decimal import Decimal
 
 def format_angka(angka):
@@ -6,8 +5,6 @@ def format_angka(angka):
     hasil = format(angka, 'f').rstrip('0').rstrip('.')
     return hasil.replace('.', ',')
 
-=======
->>>>>>> 19e71c0b50b80bdd378ed0323ad33fc3bd8f600c
 def add(x, y):
     return x + y
 
@@ -23,11 +20,7 @@ def divide(x, y):
 def exponent(x, y):
     return x ** y
 
-<<<<<<< HEAD
 print("Kalkulator Sederhana")
-=======
-print ("Kalkulator Sederhana")
->>>>>>> 19e71c0b50b80bdd378ed0323ad33fc3bd8f600c
 print("Pilih Operasi:")
 print("1. Penjumlahan")
 print("2. Pengurangan")
@@ -42,7 +35,6 @@ try:
     num2 = float(input("Masukkan bilangan kedua: "))
 
     if choice == '1':
-<<<<<<< HEAD
         hasil = add(num1, num2)
         print(f"{format_angka(num1)} + {format_angka(num2)} = {format_angka(hasil)}")
 
@@ -68,18 +60,5 @@ try:
     else:
         print("Pilihan tidak valid.")
 
-=======
-        print(f"{num1} + {num2} = {add(num1, num2)}")
-    elif choice == '2':
-        print(f"{num1} - {num2} = {subtract(num1, num2)}")
-    elif choice == '3':
-        print(f"{num1} * {num2} = {multiply(num1, num2)}")
-    elif choice == '4':
-        print(f"{num1} / {num2} = {divide(num1, num2)}")
-    elif choice == '5':
-        print(f"{num1} ^ {num2} = {exponent(num1, num2)}")
-    else:
-        print("Pilihan tidak valid.")
->>>>>>> 19e71c0b50b80bdd378ed0323ad33fc3bd8f600c
 except ValueError:
     print("Input tidak valid! Harap masukkan angka.")
